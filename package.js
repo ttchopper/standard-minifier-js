@@ -1,6 +1,6 @@
 Package.describe({
-  name: 'abernix:standard-minifier-js',
-  version: '2.1.0',
+  name: 'revol:standard-minifier-js',
+  version: '1.1.0',
   summary: 'Harmony javascript minifiers used with Meteor apps by default.',
   documentation: 'README.md',
 });
@@ -8,9 +8,9 @@ Package.describe({
 Package.registerBuildPlugin({
   name: "minifyStdJS",
   use: [
-    'abernix:minifier-js@2.1.0',
-    'babel-compiler@6.19.2',
-    'ecmascript@0.8.0'
+    'revol:minifier-js@1.0.0',
+    'babel-compiler@6.13.0',
+    'ecmascript@0.6.1'
   ],
   sources: [
     'plugin/minify-js.js',
